@@ -1,0 +1,17 @@
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: Task -1 Connect to cluster
+      shell: gcloud container clusters get-credentials my-private-cluster --zone us-central1-c --project iti-seada
+
+    - name: Task -2 Create Jenkins namespace
+      shell: kubectl create namespace jenkins
+
+    - name: Task -3 Deploying jenkins & loadbalancer servies
+      command: kubectl apply -Rf /home/mohamed/files/Jenkins/
+
+    - name: Task -4 Create Prometheus namespace
+      shell: kubectl create namespace monitor-prometheus
+
+    - name: Task -5 Deploying jenkins & loadbalancer servies
+      command: kubectl apply -Rf /home/mohamed/files/Prometheus/

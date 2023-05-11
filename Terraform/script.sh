@@ -8,3 +8,10 @@ sudo apt-get update && sudo apt-get install -y google-cloud-cli
 sudo apt-get install kubectl -y
 #To Install google plugin
 sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin -y
+#Git Clone
+sudo git clone https://github.com/seada98/Melior-Task-Infrastructure /home/mohamed/files
+#To install ansible 
+sudo apt-get install -y ansible
+#Run Ansible Playbook To Connect With cluster And deploy Jenkins With Services
+sudo ansible-playbook /home/mohamed/files/ansible.yaml
+
