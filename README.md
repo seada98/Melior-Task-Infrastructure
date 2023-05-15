@@ -73,10 +73,15 @@ kubectl get svc -n jenkins
 ```
 kubectl get svc -n monitor-prometheus
 ```
+### or you can get it from google console
+
+![](./Screenshot/service.png)
+
 ### To Get Jenkins Password Connect To VM And Type
 ```
 kubectl exec --namespace jenkins -it svc/jenkins-service -c jenkins -- /bin/cat /var/jenkins_home/secrets/initialAdminPassword && echo
 ```
+![](./Screenshot/jenkins-pass.png)
 
 ### Install Plugin And Create Your Admin User In Jenkins
 
