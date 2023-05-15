@@ -13,5 +13,5 @@
     - name: Task -4 Create Prometheus namespace
       shell: kubectl create namespace monitor-prometheus
 
-    - name: Task -5 Deploying jenkins & loadbalancer servies
+    - name: Task -5 Deploying Prometheus
       command: kubectl apply -Rf /home/mohamed/files/Prometheus/
