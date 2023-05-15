@@ -1,6 +1,6 @@
 # Melior-Task-Infrastructure
 
-![](./Screenshot/script.png)
+![](./Screenshot/project-overview.png)
 
 ## Task Overview:
 
