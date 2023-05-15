@@ -1,4 +1,7 @@
 # Melior-Task-Infrastructure
+
+![](./Screenshot/script.png)
+
 ## Task Overview:
 
 Setting up a CI/CD pipeline for a Django web application using Jenkins . The application includes a Django backend, a PostgreSQL database, and a React frontend. By Using Terraform to create infrastructure GCP. The goal is to automate the build test, and deployment processes to ensure efficient and reliable software delivery 
